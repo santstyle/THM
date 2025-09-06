@@ -115,4 +115,4 @@ cat /tmp/root.txt
 ```
 
 If successful, root.txt now exists and can be read by normal users.
-```thm{7f336f8c359dbac18d54fdd64ea753bb}```
+```thm{********}```
