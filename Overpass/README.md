@@ -7,6 +7,16 @@
 
 # Writeups
 - `nmap -sC -sV 10.201.116.138 > nmap_overpass` 
+```  PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 37:96:85:98:d1:00:9c:14:63:d9:b0:34:75:b1:f9:57 (RSA)
+|   256 53:75:fa:c0:65:da:dd:b1:e8:dd:40:b8:f6:82:39:24 (ECDSA)
+|_  256 1c:4a:da:1f:36:54:6d:a6:c6:17:00:27:2e:67:75:9c (ED25519)
+80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Overpass
+```
+
 - `gobuster dir -u http://10.201.116.138/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 40 -o gobuster_overpass.txt`
 
 ``` bash
