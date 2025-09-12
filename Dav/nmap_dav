@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Fri Sep 12 16:17:00 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_dav 10.201.7.176
+Nmap scan report for 10.201.7.176
+Host is up (0.29s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 12 16:17:29 2025 -- 1 IP address (1 host up) scanned in 28.70 seconds

@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Fri Sep 12 16:19:03 2025 as: /usr/lib/nmap/nmap --privileged -p80 -sCV -vvvv -oN version.txt 10.201.7.176
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for 10.201.7.176
+Host is up, received reset ttl 61 (0.28s latency).
+Scanned at 2025-09-12 16:19:03 WIB for 14s
+
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 61 Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 12 16:19:17 2025 -- 1 IP address (1 host up) scanned in 14.22 seconds
