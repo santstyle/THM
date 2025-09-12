@@ -1,5 +1,5 @@
 # W1seGuy
-## Difficulty: Medium
+## Difficulty: Easy
 
 A w1se guy 0nce said, the answer is usually as plain as day.
 
