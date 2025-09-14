@@ -1,0 +1,32 @@
+# Nmap 7.95 scan initiated Sat Sep 13 07:54:13 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_allinone 10.201.7.83
+Nmap scan report for 10.201.7.83
+Host is up (0.31s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.9.1.226
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 3e:65:f3:f2:79:35:7b:59:ea:dc:04:e9:3a:1c:23:1e (RSA)
+|   256 b9:52:01:7a:f3:e3:21:6a:36:c7:1d:b7:49:b9:80:ca (ECDSA)
+|_  256 42:b2:f3:a2:e6:16:81:27:22:d4:ba:06:63:27:a7:6d (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 13 07:54:38 2025 -- 1 IP address (1 host up) scanned in 25.34 seconds
