@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Mon Sep 15 09:22:06 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_team 10.201.20.215
+Nmap scan report for 10.201.20.215
+Host is up (0.29s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 96:a9:7c:aa:61:b3:2e:79:32:6d:ba:a5:81:f8:09:24 (RSA)
+|   256 df:cd:4a:67:c4:36:b2:e9:48:86:52:3c:6d:88:87:8a (ECDSA)
+|_  256 66:f6:ca:83:58:5c:1a:c0:99:45:a5:4e:8a:e1:8f:e1 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works! If you see this add 'te...
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 15 09:22:50 2025 -- 1 IP address (1 host up) scanned in 43.62 seconds
