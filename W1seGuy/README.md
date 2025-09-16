@@ -25,11 +25,11 @@ Use CyberChef to find the first flag
 + XOR
 + To Hex
 
-`THM{p1alntExtAtt4ckcAnr3alLyhUrty0urxOr}`
+`THM{*****************}`
 ```bash
 
 What is the encryption key? P2CZh
 
-Congrats! That is the correct key! Here is flag 2: THM{BrUt3_ForC1nG_XOR_cAn_B3_FuN_nO?}
+Congrats! That is the correct key! Here is flag 2: THM{*****************}
 
 ```
