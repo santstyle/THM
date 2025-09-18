@@ -1,5 +1,5 @@
 # Team
-## Easy
+## Difficulty: Easy
  Beginner friendly boot2root machine
 
 ## Task
