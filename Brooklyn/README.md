@@ -1,4 +1,6 @@
 # Brooklyn Nine Nine
+This room is aimed for beginner level hackers but anyone can try to hack this box. There are two main intended ways to root the box.
+
 ### Difficulty: Easy
 
 
