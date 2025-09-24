@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Mon Sep 15 20:35:17 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_silverplatter 10.201.4.203
+Nmap scan report for 10.201.4.203
+Host is up (0.29s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 d1:7d:1c:13:cb:38:70:8b:a8:a3:aa:68:37:05:d7:62 (ECDSA)
+|_  256 73:6b:45:1b:c0:de:81:a2:14:33:2a:b5:14:7f:dd:c5 (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+|_http-title: Hack Smarter Security
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 15 20:35:57 2025 -- 1 IP address (1 host up) scanned in 40.08 seconds
