@@ -1,0 +1,29 @@
+# Oracle 9
+## Easy
+My designation is Oracle 9, I carry with me a sealed transmission.
+
+## Information Gatherings
+```bash
+nmap -sC -sV 10.201.23.61 -oN oracle9_nmap
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-25 19:52 WIB
+Nmap scan report for 10.201.23.61
+Host is up (3.1s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 5e:b3:b8:fc:e2:65:38:fd:03:f7:51:01:f4:72:46:05 (ECDSA)
+|_  256 9c:1f:65:2c:f3:52:78:ba:be:c1:6b:a4:e7:b8:dd:7a (ED25519)
+80/tcp   open  http    Werkzeug httpd 3.0.2 (Python 3.10.12)
+|_http-server-header: Werkzeug/3.0.2 Python/3.10.12
+|_http-title: AI Assistant
+5000/tcp open  http    Werkzeug httpd 3.0.2 (Python 3.10.12)
+|_http-server-header: Werkzeug/3.0.2 Python/3.10.12
+|_http-title: 404 Not Found
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 56.67 seconds
+
+```
