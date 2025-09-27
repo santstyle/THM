@@ -32,18 +32,6 @@ Nmap done: 1 IP address (1 host up) scanned in 40.08 seconds
 ```
 ## Enumerations
 + In http://10.201.48.47#contact we found username is `scr1ptkiddy`
-+ Using gobuster found
-```bash
-/assets            
-/images 
-/index.html
-```
-```bash
-gobuster dir -u http://10.201.74.14:8080/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
-
-/website              
-/console              
-```
 
 In url browser search `http://10.201.17.48:8080/silverpeas/AuthenticationServlet`
 
