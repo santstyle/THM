@@ -1,6 +1,6 @@
 # TryHackMe Walkthroughs
 
-This repository contains personal documentation of TryHackMe machines. Each machine has its own folder containing step-by-step exploitation notes, screenshots, and summaries. All sensitive data such as flags have been filtered to ensure safety for public sharing
+This repository contains personal documentation of TryHackMe machines. Each machine has its own folder containing step-by-step exploitation notes, screenshots, and summaries. All sensitive data such as flags have been filtered to ensure safety for public sharing.
 
 ---
 
