@@ -1,0 +1,40 @@
+# Nmap 7.95 scan initiated Tue Oct 28 09:03:41 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap.txt 10.201.103.138
+Nmap scan report for 10.201.103.138
+Host is up (0.29s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 10:8a:f5:72:d7:f9:7e:14:a5:c5:4f:9e:97:8b:3d:58 (RSA)
+|   256 7f:10:f5:57:41:3c:71:db:b5:5b:db:75:c9:76:30:5c (ECDSA)
+|_  256 6b:4c:23:50:6f:36:00:7c:a6:7c:11:73:c1:a8:60:0c (ED25519)
+80/tcp  open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: TECHSUPPORT; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -1h49m59s, deviation: 3h10m30s, median: 0s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2025-10-28T02:04:00
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: techsupport
+|   NetBIOS computer name: TECHSUPPORT\x00
+|   Domain name: \x00
+|   FQDN: techsupport
+|_  System time: 2025-10-28T07:33:58+05:30
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 28 09:04:10 2025 -- 1 IP address (1 host up) scanned in 28.91 seconds
