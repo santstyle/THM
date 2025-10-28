@@ -12,18 +12,6 @@ Key outcomes include:
 
 The engagement adhered to ethical hacking principles, focusing on reproducibility and detailed documentation for educational purposes.
 
-## Methodology
-
-The penetration testing process followed a structured methodology inspired by the Offensive Security Certified Professional (OSCP) framework, including:
-1. **Reconnaissance**: Passive and active scanning to identify target details.
-2. **Enumeration**: In-depth probing of services, directories, and shares to gather intelligence.
-3. **Exploitation**: Leveraging identified vulnerabilities for initial access.
-4. **Post-Exploitation**: Stabilizing the shell and exploring the system.
-5. **Privilege Escalation**: Elevating privileges to root.
-6. **Reporting**: Documenting findings, steps, and recommendations.
-
-Tools utilized include Nmap, Feroxbuster, smbmap, smbclient, CyberChef, Python exploit scripts, Netcat, and standard Linux utilities. All steps are detailed below for reproducibility, assuming a Kali Linux attacker machine with necessary tools installed.
-
 ## Reconnaissance
 
 ### Target Identification
