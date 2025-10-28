@@ -1,4 +1,4 @@
-# Penetration Testing Report: Tech_Supp0rt TryHackMe Room
+# Tech_Supp0rt TryHackMe Room
 
 ## Executive Summary
 
