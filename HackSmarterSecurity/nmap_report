@@ -1,0 +1,116 @@
+# Nmap 7.95 scan initiated Fri Oct 31 05:43:36 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_report 10.201.54.34
+Nmap scan report for 10.201.54.34
+Host is up (0.29s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 06-28-23  02:58PM                 3722 Credit-Cards-We-Pwned.txt
+|_06-28-23  03:00PM              1022126 stolen-passport.png
+| ftp-syst: 
+|_  SYST: Windows_NT
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0d:fa:da:de:c9:dd:99:8d:2e:8e:eb:3b:93:ff:e2:6c (RSA)
+|   256 5d:0c:df:32:26:d3:71:a2:8e:6e:9a:1c:43:fc:1a:03 (ECDSA)
+|_  256 c4:25:e7:09:d6:c9:d9:86:5f:6e:8a:8b:ec:13:4a:8b (ED25519)
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: HackSmarterSec
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+1311/tcp open  ssl/rxmon?
+| ssl-cert: Subject: commonName=hacksmartersec/organizationName=Dell Inc/stateOrProvinceName=TX/countryName=US
+| Not valid before: 2023-06-30T19:03:17
+|_Not valid after:  2025-06-29T19:03:17
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 
+|     Strict-Transport-Security: max-age=0
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     vary: accept-encoding
+|     Content-Type: text/html;charset=UTF-8
+|     Date: Thu, 30 Oct 2025 22:44:11 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+|     <html>
+|     <head>
+|     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+|     <title>OpenManage&trade;</title>
+|     <link type="text/css" rel="stylesheet" href="/oma/css/loginmaster.css">
+|     <style type="text/css"></style>
+|     <script type="text/javascript" src="/oma/js/prototype.js" language="javascript"></script><script type="text/javascript" src="/oma/js/gnavbar.js" language="javascript"></script><script type="text/javascript" src="/oma/js/Clarity.js" language="javascript"></script><script language="javascript">
+|   HTTPOptions: 
+|     HTTP/1.1 200 
+|     Strict-Transport-Security: max-age=0
+|     X-Frame-Options: SAMEORIGIN
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     vary: accept-encoding
+|     Content-Type: text/html;charset=UTF-8
+|     Date: Thu, 30 Oct 2025 22:44:18 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+|     <html>
+|     <head>
+|     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+|     <title>OpenManage&trade;</title>
+|     <link type="text/css" rel="stylesheet" href="/oma/css/loginmaster.css">
+|     <style type="text/css"></style>
+|_    <script type="text/javascript" src="/oma/js/prototype.js" language="javascript"></script><script type="text/javascript" src="/oma/js/gnavbar.js" language="javascript"></script><script type="text/javascript" src="/oma/js/Clarity.js" language="javascript"></script><script language="javascript">
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: HACKSMARTERSEC
+|   NetBIOS_Domain_Name: HACKSMARTERSEC
+|   NetBIOS_Computer_Name: HACKSMARTERSEC
+|   DNS_Domain_Name: hacksmartersec
+|   DNS_Computer_Name: hacksmartersec
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-10-30T22:44:51+00:00
+| ssl-cert: Subject: commonName=hacksmartersec
+| Not valid before: 2025-10-29T22:42:20
+|_Not valid after:  2026-04-30T22:42:20
+|_ssl-date: 2025-10-30T22:44:58+00:00; -1s from scanner time.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1311-TCP:V=7.95%T=SSL%I=7%D=10/31%Time=6903EA3D%P=x86_64-pc-linux-g
+SF:nu%r(GetRequest,1089,"HTTP/1\.1\x20200\x20\r\nStrict-Transport-Security
+SF::\x20max-age=0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Content-Type-Opti
+SF:ons:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nvary:\x20ac
+SF:cept-encoding\r\nContent-Type:\x20text/html;charset=UTF-8\r\nDate:\x20T
+SF:hu,\x2030\x20Oct\x202025\x2022:44:11\x20GMT\r\nConnection:\x20close\r\n
+SF:\r\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20St
+SF:rict//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd\">
+SF:\r\n<html>\r\n<head>\r\n<META\x20http-equiv=\"Content-Type\"\x20content
+SF:=\"text/html;\x20charset=UTF-8\">\r\n<title>OpenManage&trade;</title>\r
+SF:\n<link\x20type=\"text/css\"\x20rel=\"stylesheet\"\x20href=\"/oma/css/l
+SF:oginmaster\.css\">\r\n<style\x20type=\"text/css\"></style>\r\n<script\x
+SF:20type=\"text/javascript\"\x20src=\"/oma/js/prototype\.js\"\x20language
+SF:=\"javascript\"></script><script\x20type=\"text/javascript\"\x20src=\"/
+SF:oma/js/gnavbar\.js\"\x20language=\"javascript\"></script><script\x20typ
+SF:e=\"text/javascript\"\x20src=\"/oma/js/Clarity\.js\"\x20language=\"java
+SF:script\"></script><script\x20language=\"javascript\">\r\n\x20")%r(HTTPO
+SF:ptions,1089,"HTTP/1\.1\x20200\x20\r\nStrict-Transport-Security:\x20max-
+SF:age=0\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-Content-Type-Options:\x20n
+SF:osniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nvary:\x20accept-enco
+SF:ding\r\nContent-Type:\x20text/html;charset=UTF-8\r\nDate:\x20Thu,\x2030
+SF:\x20Oct\x202025\x2022:44:18\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOC
+SF:TYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Strict//EN\
+SF:"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-strict\.dtd\">\r\n<html
+SF:>\r\n<head>\r\n<META\x20http-equiv=\"Content-Type\"\x20content=\"text/h
+SF:tml;\x20charset=UTF-8\">\r\n<title>OpenManage&trade;</title>\r\n<link\x
+SF:20type=\"text/css\"\x20rel=\"stylesheet\"\x20href=\"/oma/css/loginmaste
+SF:r\.css\">\r\n<style\x20type=\"text/css\"></style>\r\n<script\x20type=\"
+SF:text/javascript\"\x20src=\"/oma/js/prototype\.js\"\x20language=\"javasc
+SF:ript\"></script><script\x20type=\"text/javascript\"\x20src=\"/oma/js/gn
+SF:avbar\.js\"\x20language=\"javascript\"></script><script\x20type=\"text/
+SF:javascript\"\x20src=\"/oma/js/Clarity\.js\"\x20language=\"javascript\">
+SF:</script><script\x20language=\"javascript\">\r\n\x20");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 31 05:45:02 2025 -- 1 IP address (1 host up) scanned in 85.95 seconds
