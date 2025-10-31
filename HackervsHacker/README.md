@@ -8,7 +8,7 @@ This report details the penetration testing engagement on the TryHackMe room "Ha
 - **Vulnerability Exploited:** Unrestricted file upload allowing webshell execution.
 - **Initial Access:** Webshell via PHP file upload.
 - **Privilege Escalation:** Bypassed cron-based session killer by hijacking PATH and executing reverse shell.
-- **Flags Obtained:** User flag (thm{af7e46b68081d4025c5ce10851430617}), Root flag (thm{7b708e5224f666d3562647816ee2a1d4}).
+- **Flags Obtained:** 
 
 **Recommendations:** Implement proper file type validation, restrict upload directories, and monitor cron jobs for persistence mechanisms.
 
