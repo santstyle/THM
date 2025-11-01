@@ -1,0 +1,5 @@
+/test                [36m (Status: 302)[0m [Size: 0][34m [--> http://10.201.90.162:8161/admin/test/][0m
+/images              [36m (Status: 302)[0m [Size: 0][34m [--> http://10.201.90.162:8161/admin/images/][0m
+/js                  [36m (Status: 302)[0m [Size: 0][34m [--> http://10.201.90.162:8161/admin/js/][0m
+/styles              [36m (Status: 302)[0m [Size: 0][34m [--> http://10.201.90.162:8161/admin/styles/][0m
+/xml                 [36m (Status: 302)[0m [Size: 0][34m [--> http://10.201.90.162:8161/admin/xml/][0m
