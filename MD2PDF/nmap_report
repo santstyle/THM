@@ -1,0 +1,106 @@
+# Nmap 7.95 scan initiated Sun Nov  2 00:10:18 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_report 10.201.63.111
+WARNING: Service 10.201.63.111:80 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+Nmap scan report for 10.201.63.111
+Host is up (0.42s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 d7:95:1e:b6:fe:11:c6:97:30:33:b6:a5:2a:f5:75:07 (RSA)
+|   256 1b:41:b6:42:36:42:e2:78:ef:a2:22:c8:f4:a3:c3:e8 (ECDSA)
+|_  256 72:62:2d:7a:c6:66:16:e3:56:45:0f:85:79:8c:ff:e2 (ED25519)
+80/tcp open  rtsp
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+|_http-title: MD2PDF
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 NOT FOUND
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 232
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+|     <title>404 Not Found</title>
+|     <h1>Not Found</h1>
+|     <p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 2660
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="utf-8" />
+|     <meta
+|     name="viewport"
+|     content="width=device-width, initial-scale=1, shrink-to-fit=no"
+|     <link
+|     rel="stylesheet"
+|     href="./static/codemirror.min.css"/>
+|     <link
+|     rel="stylesheet"
+|     href="./static/bootstrap.min.css"/>
+|     <title>MD2PDF</title>
+|     </head>
+|     <body>
+|     <!-- Navigation -->
+|     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+|     <div class="container">
+|     class="navbar-brand" href="/"><span class="">MD2PDF</span></a>
+|     </div>
+|     </nav>
+|     <!-- Page Content -->
+|     <div class="container">
+|     <div class="">
+|     <div class="card mt-4">
+|     <textarea class="form-control" name="md" id="md"></textarea>
+|     </div>
+|     <div class="mt-3
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=utf-8
+|     Allow: GET, OPTIONS, HEAD
+|     Content-Length: 0
+|   RTSPRequest: 
+|     RTSP/1.0 200 OK
+|     Content-Type: text/html; charset=utf-8
+|     Allow: GET, OPTIONS, HEAD
+|_    Content-Length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.95%I=7%D=11/2%Time=69063F08%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,AB5,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;\x20ch
+SF:arset=utf-8\r\nContent-Length:\x202660\r\n\r\n<!DOCTYPE\x20html>\n<html
+SF:\x20lang=\"en\">\n\x20\x20<head>\n\x20\x20\x20\x20<meta\x20charset=\"ut
+SF:f-8\"\x20/>\n\x20\x20\x20\x20<meta\n\x20\x20\x20\x20\x20\x20name=\"view
+SF:port\"\n\x20\x20\x20\x20\x20\x20content=\"width=device-width,\x20initia
+SF:l-scale=1,\x20shrink-to-fit=no\"\n\x20\x20\x20\x20/>\n\n\x20\x20\x20\x2
+SF:0<link\n\x20\x20\x20\x20\x20\x20rel=\"stylesheet\"\n\x20\x20\x20\x20\x2
+SF:0\x20href=\"\./static/codemirror\.min\.css\"/>\n\n\x20\x20\x20\x20<link
+SF:\n\x20\x20\x20\x20\x20\x20rel=\"stylesheet\"\n\x20\x20\x20\x20\x20\x20h
+SF:ref=\"\./static/bootstrap\.min\.css\"/>\n\n\x20\x20\x20\x20\n\x20\x20\x
+SF:20\x20<title>MD2PDF</title>\n\x20\x20</head>\n\n\x20\x20<body>\n\x20\x2
+SF:0\x20\x20<!--\x20Navigation\x20-->\n\x20\x20\x20\x20<nav\x20class=\"nav
+SF:bar\x20navbar-expand-md\x20navbar-dark\x20bg-dark\">\n\x20\x20\x20\x20\
+SF:x20\x20<div\x20class=\"container\">\n\x20\x20\x20\x20\x20\x20\x20\x20<a
+SF:\x20class=\"navbar-brand\"\x20href=\"/\"><span\x20class=\"\">MD2PDF</sp
+SF:an></a>\n\x20\x20\x20\x20\x20\x20</div>\n\x20\x20\x20\x20</nav>\n\n\x20
+SF:\x20\x20\x20<!--\x20Page\x20Content\x20-->\n\x20\x20\x20\x20<div\x20cla
+SF:ss=\"container\">\n\x20\x20\x20\x20\x20\x20<div\x20class=\"\">\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<div\x20class=\"card\x20mt-4\">\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20<textarea\x20class=\"form-control\"\x20name=
+SF:\"md\"\x20id=\"md\"></textarea>\n\x20\x20\x20\x20\x20\x20\x20\x20</div>
+SF:\n\n\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\"mt-3\x20")%r(HTTPOp
+SF:tions,69,"HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/html;\x20char
+SF:set=utf-8\r\nAllow:\x20GET,\x20OPTIONS,\x20HEAD\r\nContent-Length:\x200
+SF:\r\n\r\n")%r(RTSPRequest,69,"RTSP/1\.0\x20200\x20OK\r\nContent-Type:\x2
+SF:0text/html;\x20charset=utf-8\r\nAllow:\x20GET,\x20OPTIONS,\x20HEAD\r\nC
+SF:ontent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,13F,"HTTP/1\.0\x20404
+SF:\x20NOT\x20FOUND\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nCon
+SF:tent-Length:\x20232\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD
+SF:\x20HTML\x203\.2\x20Final//EN\">\n<title>404\x20Not\x20Found</title>\n<
+SF:h1>Not\x20Found</h1>\n<p>The\x20requested\x20URL\x20was\x20not\x20found
+SF:\x20on\x20the\x20server\.\x20If\x20you\x20entered\x20the\x20URL\x20manu
+SF:ally\x20please\x20check\x20your\x20spelling\x20and\x20try\x20again\.</p
+SF:>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  2 00:10:46 2025 -- 1 IP address (1 host up) scanned in 28.66 seconds
