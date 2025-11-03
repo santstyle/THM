@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Sun Nov  2 16:10:29 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -Pn -vvv -oN nmap_report 10.201.79.197
+Increasing send delay for 10.201.79.197 from 0 to 5 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.201.79.197 from 5 to 10 due to 29 out of 71 dropped probes since last increase.
+Warning: 10.201.79.197 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.201.79.197
+Host is up, received user-set (0.29s latency).
+Scanned at 2025-11-02 16:10:29 WIB for 3904s
+Not shown: 64783 closed tcp ports (reset), 746 filtered tcp ports (no-response)
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack ttl 61
+80/tcp   open  http    syn-ack ttl 61
+8065/tcp open  unknown syn-ack ttl 60
+8075/tcp open  unknown syn-ack ttl 60
+8085/tcp open  unknown syn-ack ttl 60
+8095/tcp open  unknown syn-ack ttl 60
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Nov  2 17:15:33 2025 -- 1 IP address (1 host up) scanned in 3904.25 seconds
