@@ -5,7 +5,6 @@
 - **Difficulty**: Easy
 - **Platform**: TryHackMe
 - **Date of Engagement**: November 4, 2025
-inconsistent; using placeholder for consistency)
 
 ## Executive Summary
 This report details the penetration testing engagement on the RootMe challenge from TryHackMe. The objective was to gain initial access to the target system, escalate privileges to root, and capture both user and root flags. The engagement followed a structured methodology including reconnaissance, enumeration, exploitation, and privilege escalation. Key findings include vulnerabilities in file upload mechanisms and SUID binaries. The engagement was successful, with both flags captured.
