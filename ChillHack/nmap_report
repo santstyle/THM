@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Thu Nov  6 12:36:19 2025 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap_report 10.201.78.6
+Nmap scan report for 10.201.78.6
+Host is up (0.27s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.5
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.9.1.253
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 1001     1001           90 Oct 03  2020 note.txt
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 1c:ad:43:60:94:1e:11:93:66:06:fc:40:a2:20:89:ae (RSA)
+|   256 97:c3:f9:42:26:62:a4:1e:ca:8c:bd:4a:de:75:2a:eb (ECDSA)
+|_  256 92:28:71:37:e7:8f:74:38:f7:e4:9d:66:b3:c2:8f:f3 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Game Info
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov  6 12:36:39 2025 -- 1 IP address (1 host up) scanned in 20.09 seconds
