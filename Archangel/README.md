@@ -45,7 +45,7 @@ sudo nano /etc/hosts
 
 Browsed to `http://mafialive.thm` and discovered the first flag in the page source.
 
-**Flag:** thm{f0und_th3_r1ght_h0st_n4m3}
+**Flag:** thm{**************}
 
 ## Enumeration
 
@@ -104,7 +104,7 @@ Priority: u=0, i
 ```
 
 Decoded the base64 response to reveal the PHP source code, which included:
-- A flag: thm{explo1t1ng_lf1}
+- A flag: thm{***************}
 - Logic allowing inclusion of files in `/var/www/html/development_testing` but preventing directory traversal.
 
 ### Step 6: Log Poisoning for Remote Code Execution (RCE)
@@ -140,7 +140,7 @@ Upgraded to a full TTY:
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
 
-**Flag:** thm{lf1_t0_rc3_1s_tr1cky}
+**Flag:** thm{*****************}
 
 ## Privilege Escalation
 
@@ -156,7 +156,7 @@ ls /home/archangel
 # Output: myfiles secret user.txt
 
 cat /home/archangel/user.txt
-# Flag: thm{lf1_t0_rc3_1s_tr1cky}
+# Flag: thm{******************}
 ```
 
 Found a script owned by 'archangel':
@@ -188,7 +188,7 @@ ls
 # Output: backup user2.txt
 
 cat user2.txt
-# Flag: thm{h0r1zont4l_pr1v1l3g3_2sc4ll4t10n_us1ng_cr0n}
+# Flag: thm{*****************}
 ```
 
 ### Step 8: Vertical Privilege Escalation to Root
@@ -217,7 +217,7 @@ ls
 # Output: root.txt
 
 cat root.txt
-# Flag: thm{p4th_v4r1abl3_expl01tat1ion_f0r_v3rt1c4l_pr1v1l3g3_3sc4ll4t10n}
+# Flag: thm{*******************}
 ```
 
 ## Conclusion
